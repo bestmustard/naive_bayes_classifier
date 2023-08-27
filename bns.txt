@@ -1,0 +1,7 @@
+1. The calculations tell us that our Naive Bayesian network is not fair based on the options to measure "fairness" with respect to gender. 
+Questions 1 and 2 show that the predictions are not well 'separated' from gender, because when gender was added to the evidence set in E2 compared to E1, 99.95% of women had a better prediction using E1 compared to E2 while 0% of men had the same statistic.
+Questions 3 and 4 show that the predictions were not 'sufficient'. Although the statistical differences were far smaller compared to Q1 and Q2, men still had a 9% higher chance for our guess of their salary to correspond to their actual salary.
+Questions 5 and 6 show a lack of demographic parity in the predictions. The distribution of our guesses had a large difference by gender, of 8.06% for women and 25.42% for men.
+Overall, the only aspect in which our Naive Bayesian network may have been "fair" in was sufficiency.
+
+2. Given the issues presented in question 1, I would not recommend using this model to recommend starting salaries for employees at a firm. The biases we found could lead to unfair salary recommendations that favour one gender over the other. If fairness cannot be guaranteed, the model should not be used for decision-making in such a sensitive context. Before employing this model in a real-world scenario, it would be crucial to investigate the root causes of the imbalances.
